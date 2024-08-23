@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروع افاق</title>
+    <link rel="stylesheet" href="mm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <!-- شاشة البداية -->
+    <div class="splash">
+        <img src="img/log.jpg" alt="Logo">
+    </div>
+
+    <!-- الصفحة الرئيسية -->
+    <div class="main-content" style="display: none;">
+        <nav class="navbar">
+            <button class="menu-btn" onclick="toggleMenu()">
+                <div class="menu-icon">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <div class="close-icon">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                </div>
+            </button>
+            <div class="language-selector" id="language-selector">
+                <i class="fa fa-language" aria-hidden="true"></i>
+                <div class="language-options" id="language-options">
+                    <a href="#" onclick="changeLanguage('en')" class="lang-option">EN</a>
+                    <a href="#" onclick="changeLanguage('ar')" class="lang-option">AR</a>
+                </div>
+            </div>
+            <ul class="list">
+                <li class="nav-itm"><a href="#" data-en="Contact Us" data-ar="التواصل معنا">التواصل معنا</a></li>
+                <li class="nav-itm"><a href="#about" data-en="About Us" data-ar="معلومات عنا">معلومات عنا</a></li>
+                <li class="nav-itm"><a href="#news" data-en="Our News" data-ar="أخبارنا">أخبارنا</a></li>
+                <li class="nav-itm"><a href="#" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+            </ul>
+            <div class="logo">
+                <img src="img/log.jpg" alt="Logo">
+            </div>
+        </nav>
+        <!-- محتوى الصفحة الرئيسي هنا -->
+
+    <!-- معرض الصور الدائري -->
+ <section class="gallery">
+     <div class="card text-bg-dark position-relative">
+         <img src="img/AR-PRES-IMG.jpeg" class="card-img" alt="صورة">
+         <!-- طبقة التظليل -->
+         
+         <div class="overlay"></div>
+         
+         <!-- النص على الصورة -->
+         <div class="card-img-overlay d-flex align-items-center justify-content-center">
+             <h5 class="text-white centered-text"> مؤسسة مدد </h5>
+            </div>
+  </div>
+</section>
+
+
+<section class="news" id="news">
+<h1 data-en=" News" data-ar="اخبارنا ">اخبارنا</h1>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="img/2.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"  data-en="Qadir Project" data-ar="مشروع قادر">مشروع قادر </h5>
+        <p class="card-text" data-en="Training young people on craft skills to provide them with job opportunities and launch their own projects, where training on barbering for youth and beauty for women was targeted
+24 trainees" data-ar="تدريب الشباب و الشباب علي المهارات الحرفية لتوفير فرص عمل لهم و الانطلاق في مشاريعهم الخاصة حيت استهدف تدريب علي الحلاقة للشباب و التجميل للسيدات
+بعدد 24 متدرب">تدريب الشباب و الشباب علي المهارات الحرفية لتوفير فرص عمل لهم و الانطلاق في مشاريعهم الخاصة حيت استهدف تدريب علي الحلاقة للشباب و التجميل للسيدات
+بعدد 24 متدرب</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/22.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" data-en="Peaceful coexistence in societies " data-ar="التعايش السلمي في المجتمعات ">التعايش السلمي في المجتمعات </h5>
+        <p class="card-text" data-en="It is a project aimed at building peace in Libyan society and the mechanism of peaceful coexistence, creating a joint work space between the opposing groups, conducting dialogue sessions and working on their results." data-ar="هو مشروع يستهدف بناء السلام في المجتمع الليبي و اليه التعايش السلمي و خلق مساحة عمل مشتركة بين الفئات التخاصمة و تسيير جلسات حوارية و العمل علي نتائجها">لتوليد الافكار و كيفية انشاء خطط عمل للمهارات و المواهب التي يكتسيبونها و خلق تواصل مباشر مع الجهات المختصة</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="img/222.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title" data-en="Reach Project" data-ar="مشروع ريتش">مشروع ريتش 
+ </h5>
+        <p class="card-text" data-en="It is a project to support startups and train them on how to develop business plans and build an organizational administrative structure as well as draw strategic plans for the company and the mechanism of writing assays and tenders to obtain the submitted projects" data-ar="هوا مشروع لدعم الشركات الناشئة وتدريبهم علي كيفية وضع خطط عمل و بناء هيكل اداري تنضيمي و ايضا رسم خطط استراتيجية للشركة و اليه كتابة المقايسات و المناقصات للحصول علي المشاريع المقدمة">هوا مشروع لدعم الشركات الناشئة وتدريبهم علي كيفية وضع خطط عمل و بناء هيكل اداري تنضيمي و ايضا رسم خطط استراتيجية للشركة و اليه كتابة المقايسات و المناقصات للحصول علي المشاريع المقدمة</p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="heading" data-en="About Us" data-ar="معلومات عنا"> معلومات عنا <span></span></h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="img/log.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <p data-en="Madad Foundation is a non-profit organization that promotes community development and supports crisis and conflict recovery efforts. The Foundation focuses on providing the necessary support to affected communities through projects aimed at improving living conditions and enhancing social and economic stability." data-ar="مؤسسة مدد هي منظمة غير ربحية تعمل على تعزيز تطوير المجتمعات المحلية ودعم جهود التعافي من الأزمات والصراعات. تركز المؤسسة على تقديم الدعم اللازم للمجتمعات المتضررة من خلال مشاريع تهدف إلى تحسين الظروف المعيشية وتعزيز الاستقرار الاجتماعي والاقتصادي">
+                   مؤسسة مدد هي منظمة غير ربحية تعمل على تعزيز تطوير المجتمعات المحلية ودعم جهود التعافي من الأزمات والصراعات. تركز المؤسسة على تقديم الدعم اللازم للمجتمعات المتضررة من خلال مشاريع تهدف إلى تحسين الظروف المعيشية وتعزيز الاستقرار الاجتماعي والاقتصادي 
+                </p>            </div>
+        </div>
+    </section>
+
+ <div class="contact-container">
+        <div class="contact-left">
+            <h2 data-en="Contact Us" data-ar=" التواصل معنا">التواصل معنا</h2>
+            <img src="img/conn.png" alt="Contact Image">
+            <p data-en="Contact Methods" data-ar=" طرق التواصل">طرق التواصل</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="contact-right">
+            <h2 data-en="Message" data-ar=" مراسلتنا">مراسلتنا</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="الاسم" required>
+                <input type="email" name="email" placeholder="الايميل" required>
+                <input type="tel" name="phone" placeholder="رقم الهاتف" required>
+                <textarea name="message" placeholder="تعليقات" required></textarea>
+                <button type="submit" data-en="send" data-ar="ارسال">ارسال</button>
+            </form>
+            <div id="success-message" class="success-message">
+                <i class="fas fa-check-circle"></i>
+                Your message has been sent successfully. Thank you!
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h2 class="typing-animation"> صمم بواسطة :هاجر بشير راجح ©2024 </h2>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
